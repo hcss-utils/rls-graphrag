@@ -63,7 +63,7 @@ input:
   file_encoding: utf-8
   file_pattern: ".*\\.csv$"
   timestamp_column: "date_published"
-  timestamp_format: "YYYY-MM-DD"
+  timestamp_format: "%Y-%m-%d"
   source_column: "source"
   text_column: "text"
   title_column: "title"
@@ -149,13 +149,13 @@ local_search:
   # llm_temperature: 0 # temperature for sampling
   # llm_top_p: 1 # top-p sampling
   # llm_n: 1 # Number of completions to generate
-  max_tokens: 8000
+  max_tokens: 8192
 
 global_search:
   # llm_temperature: 0 # temperature for sampling
   # llm_top_p: 1 # top-p sampling
   # llm_n: 1 # Number of completions to generate
-  max_tokens: 8000
+  max_tokens: 8192
   # data_max_tokens: 12000
   # map_max_tokens: 1000
   # reduce_max_tokens: 2000
