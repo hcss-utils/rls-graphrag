@@ -4,10 +4,10 @@ skip_workflows: []
 llm:
   api_key: ${GRAPHRAG_API_KEY}
   type: openai_chat # or azure_openai_chat
-  model: llama3.1:8b
+  model: custom-model:latest
   model_supports_json: true # recommended if this is available for your model.
-  max_tokens: 8000
-  # request_timeout: 180.0
+  max_tokens: 8192
+  request_timeout: 1200.0
   api_base: http://localhost:11434/v1
   # api_version: 2024-02-15-preview
   # organization: <organization_id>
