@@ -17,6 +17,7 @@ metadata AS (
         dm.url AS source
     FROM documents_metadata dm
     INNER JOIN theme_documents td ON dm.id = td.document_id
+    WHERE dm.date >= '2022-02-24'
 ),
 relevant_sentences AS (
     SELECT
